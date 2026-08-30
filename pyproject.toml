@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "otus-yandex-gpt-jodinoko-home-task"
+version = "0.1.0"
+description = "Yandex Cloud and YandexGPT"
+readme = "README.md"
+requires-python = "==3.12.11"
+dependencies = [
+    "python-dotenv==1.2.3",
+    "requests==2.31.0",
+    "yandexgpt-python==0.2.3",
+]
+
+[project.scripts]
+otus-yandex-gpt = "otus_yandex_gpt.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
