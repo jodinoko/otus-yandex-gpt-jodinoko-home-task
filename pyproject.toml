@@ -16,8 +16,8 @@ dependencies = [
 ]
 
 [project.scripts]
-otus-yandex-gpt = "otus_yandex_gpt.main:main"
 prepare-legal-data = "otus_yandex_gpt.data_preparation:main"
+evaluate-legal-ner = "otus_yandex_gpt.evaluation:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
