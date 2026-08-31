@@ -9,6 +9,7 @@ description = "Yandex Cloud and YandexGPT"
 readme = "README.md"
 requires-python = "==3.12.11"
 dependencies = [
+    "datasets==2.19.1",
     "python-dotenv==1.2.3",
     "requests==2.31.0",
     "yandexgpt-python==0.2.3",
@@ -16,6 +17,7 @@ dependencies = [
 
 [project.scripts]
 otus-yandex-gpt = "otus_yandex_gpt.main:main"
+prepare-legal-data = "otus_yandex_gpt.data_preparation:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
